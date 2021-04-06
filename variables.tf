@@ -115,7 +115,8 @@ variable "private_endpoint" {
 variable "key-protect_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+#  default = ""
+  default = [""]
 }
 variable "key-protect_plan" {
   type = string
@@ -138,7 +139,8 @@ variable "ibm-mongodb_resource_location" {
 variable "ibm-mongodb_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+  default = [""]
+#  default = ""
 }
 variable "ibm-mongodb_name_prefix" {
   type = string
@@ -193,7 +195,8 @@ variable "cos_resource_location" {
 variable "cos_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+#  default = ""
+  default = [""]
 }
 variable "cos_plan" {
   type = string
@@ -223,7 +226,8 @@ variable "ibm-vpc_public_gateway" {
 variable "ibm-activity-tracker_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+  # default = ""
+  default = [""]
 }
 variable "ibm-activity-tracker_plan" {
   type = string
@@ -243,7 +247,8 @@ variable "logdna_plan" {
 variable "logdna_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+#  default = ""
+  default = [""]
 }
 variable "logdna_provision" {
   type = bool
@@ -263,7 +268,7 @@ variable "sysdig_plan" {
 variable "sysdig_tags" {
   type = list(string)
   description = "Tags that should be applied to the service"
-  default = ""
+  default = [""]
 }
 variable "sysdig_provision" {
   type = bool
